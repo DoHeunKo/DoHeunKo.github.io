@@ -54,4 +54,4 @@ $$ θ(g(n))= \{f(n)| ∋_{c1,c2} >0, n_0>0, \forall\ n\geq n_0, c_1g(n)\leq f(n)
 * 'git init [directory]'
 * 'git clone[repository]'  
 
-$ x^2+y^2 = r^2 $
+
