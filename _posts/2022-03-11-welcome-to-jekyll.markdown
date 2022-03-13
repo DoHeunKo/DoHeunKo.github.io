@@ -29,3 +29,37 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-talk]: https://talk.jekyllrb.com/
 
 
+
+*bold*
+
+_bold_
+
+__bold__
+
+---
+
+* itme1
+
+* item2
+
+* item3
+
+1. item1
+
+2. item2
+
+
+~~~
+int main() {
+   print("Hello world\n");
+   return 0;
+~~~
+
+바나나 포스트는 '_post' 폴더 밑에 있다.  
+가나다라
+
+abcd\
+efg
+
+link: [이건 링크입니다](https://naver.com)  
+image: ![](https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png)

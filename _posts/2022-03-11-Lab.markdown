@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "Computer algorithm"
+date:   2022-03-11 08:41:41 +0900
+categories: jekyll update
+---
+
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+
+
+
+### 시간복잡도(Time Complexity)란?
+**작동하는 알고리즘의 수행시간을 정량화하는 것**
+
+### 공간복잡도(Space Complexity)란?
+**알고리즘 문제를 해결하기 위해서 사용되는 메모리의 크기를 말한다**  
+
+
+
+
+
+---
+
+
+#### **시간복잡도의 표기법**
+* 빅 오(Big-Oh, O(n)) 표기법은 Worst case  
+$$O(g(n))= \{f(n) | ∋_c>0, n_0>0,  \forall\ n\geq n_0 , f(n)\leq\ cg(n)  \}$$
+
+* 빅 오메가(Big-Omega, Ω(n)) 표기법은 Best case  
+$$ Ω(g(n))=\{f(n) | ∋_c>0, n_0>0, \forall\ n\geq n_0 , f(n)\geq\ cg(n) \} $$
+
+* 빅 세타(Big-theta, θ(n)) 표기법은 Average case  
+$$ θ(g(n))= \{f(n)| ∋_{c1,c2} >0, n_0>0, \forall\ n\geq n_0, c_1g(n)\leq f(n) \leq c_2g(n) \}$$
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FHUzQN%2FbtqysMgY8dl%2FREOiLThX3PM65wWCKGZo8k%2Fimg.jpg)
+
+---
+
+
+
+* 'git pull'
+* 'git add .'
+* 'git commit -m [message]'
+* 'git push'
+
+* 'git status'
+* 'git log'
+
+* 'git branch'
+* 'git checkout'
+* 'git reset'
+
+* 'git init [directory]'
+* 'git clone[repository]'  
+
+$ x^2+y^2 = r^2 $
