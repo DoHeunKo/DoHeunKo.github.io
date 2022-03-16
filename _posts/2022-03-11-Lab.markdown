@@ -39,19 +39,34 @@ $$ θ(g(n))= \{f(n)| ∋_{c1,c2} >0, n_0>0, \forall\ n\geq n_0, c_1g(n)\leq f(n)
 
 > git 명령어
 
-* git pull : 원격 저장소의 변경 내용이 현재 디렉토리에 가져와지고(fetch) 병합(merge)됨
-* git add .  : 커밋에 파일의 변경 사항을 한번에 모두 포함
-* git commit -m [message] : 커밋 생성(실제 변경사항 확정)
-* git push : 내 local 디렉토리로 부터 원격저장소(Remote repository)로 보냄
+* git pull  
+원격 저장소의 변경 내용이 현재 디렉토리에 가져와지고(fetch) 병합(merge)됨  
 
-* git status : 파일 상태 확인
-* git log : 현재 위치한 브랜치 커밋 내용 확인 및 식별자 부여됨
+* git add .  
+커밋에 파일의 변경 사항을 한번에 모두 포함  
 
-* git branch : 지역 브랜치 목록보기
-* git checkout : 로컬의 변경 사항을 변경 전으로 되돌림
+* git commit -m [message]  
+커밋 생성(실제 변경사항 확정)  
 
+* git push  
+내 local 디렉토리로 부터 원격저장소(Remote repository)로 보냄  
 
-* git init [directory] : .git 하위 디렉토리 생성
-(폴더를 만든 후, 그 안에서 명령 실행 => 새로운 git저장소 생성)
-* git clone[repository] : 로컬 저장소 복제  
+* git status  
+파일 상태 확인  
+
+* git log  
+현재 위치한 브랜치 커밋 내용 확인 및 식별자 부여됨  
+
+* git branch  
+지역 브랜치 목록보기  
+
+* git checkout  
+로컬의 변경 사항을 변경 전으로 되돌림  
+
+* git init [directory]  
+.git 하위 디렉토리 생성 (폴더를 만든 후, 그 안에서 명령 실행 => 새로운 git저장소 생성)  
+
+* git clone[repository]  
+로컬 저장소 복제  
+
 
