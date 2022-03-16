@@ -11,10 +11,10 @@ categories: jekyll update
 
 
 
->시간복잡도(Time Complexity)란?  
+> 시간복잡도(Time Complexity)란?  
 **작동하는 알고리즘의 수행시간을 정량화하는 것**
 
->공간복잡도(Space Complexity)란?  
+> 공간복잡도(Space Complexity)란?  
 **알고리즘 문제를 해결하기 위해서 사용되는 메모리의 크기를 말한다**  
 
 
@@ -24,7 +24,7 @@ categories: jekyll update
 ---
 
 
->**시간복잡도의 표기법**
+> **시간복잡도의 표기법**
 * 빅 오(Big-Oh, O(n)) 표기법은 Worst case  
 $$O(g(n))= \{f(n) | ∋_c>0, n_0>0,  \forall\ n\geq n_0 , f(n)\leq\ cg(n)  \}$$
 
@@ -37,7 +37,7 @@ $$ θ(g(n))= \{f(n)| ∋_{c1,c2} >0, n_0>0, \forall\ n\geq n_0, c_1g(n)\leq f(n)
 
 ---
 
->git 명령어
+> git 명령어
 
 * git pull : 원격 저장소의 변경 내용이 현재 디렉토리에 가져와지고(fetch) 병합(merge)됨
 * git add .  : 커밋에 파일의 변경 사항을 한번에 모두 포함
