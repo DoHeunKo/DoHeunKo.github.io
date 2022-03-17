@@ -93,29 +93,34 @@ git clone https://github.com/mmistakes/minimal-mistakes.git temp
 
 2. Gemfile수정  
 plugins이후 코드는 넣었을 때 오류발생
-일단, 아래 코드만 넣은 후 저장
+일단, 아래 코드만 넣은 후 저장  
+
 ~~~
 source "https://rubygems.org"
 
 gem "github-pages", group: :jekyll_plugins
-~~~
+~~~  
+
 
 3. page ,post의 layout 변경  
 ~~~
 layout: post
-~~~
+~~~  
+
 
 4. 정상적인 설치 완료 시
 ~~~
 bundle update
 bundle exec jekyll serve
-~~~
+~~~  
+
 5. 에러가 없을 시 
 ~~~
 git add .
 git commit -m [""]
 git push
-~~~
+~~~  
+
 
 ⚠️오류 발생시  
 * 테마 적용 후에 bundle 실행 시  
@@ -129,7 +134,8 @@ Gemfile에 다음을 입력 후 저장
 source 'https://rubygems.org'
 gem 'github-pages'
 '''
-~~~
+~~~  
+
 2. 
 ~~~
 Build Warning: Layout 'post' requested in _posts/[파일] does not exist.
@@ -137,4 +143,4 @@ Build Warning: Layout 'post' requested in _posts/[파일] does not exist.
 post 파일의 
 layout : archive로 바꿨을 때 오류 해결
 '''
-~~~
+~~~  
