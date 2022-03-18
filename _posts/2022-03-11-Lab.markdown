@@ -94,6 +94,7 @@ git clone https://github.com/mmistakes/minimal-mistakes.git temp
 2. Gemfile수정  
 plugins이후 코드는 넣었을 때 오류발생
 일단, 아래 코드만 넣은 후 저장  
+  
 
 ~~~
 source "https://rubygems.org"
