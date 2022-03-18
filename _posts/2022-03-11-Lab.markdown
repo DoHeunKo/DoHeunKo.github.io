@@ -74,13 +74,14 @@ $$ θ(g(n))= \{f(n)| ∋_{c1,c2} >0, n_0>0, \forall\ n\geq n_0, c_1g(n)\leq f(n)
 ---
 > jekyll theme 적용(Minimal Mistakes)  
 
-1. Minimal Mistakes 저장소 복사  
+ 1. Minimal Mistakes 저장소 복사  
 
 ~~~
 git clone https://github.com/mmistakes/minimal-mistakes.git temp  
-~~~
+~~~  
 
-2. 불필요한 파일 삭제(나머지는 덮어쓰기)
+
+ 2. 불필요한 파일 삭제(나머지는 덮어쓰기)
 
 * .editorconfig
 * .gitattributes
@@ -92,36 +93,34 @@ git clone https://github.com/mmistakes/minimal-mistakes.git temp
 * screenshot-layouts.png
 * screenshoe.png
 
-3. Gemfile수정  
-plugins이후 코드는 넣었을 때 오류발생
-일단, 아래 코드만 넣은 후 저장  
-  
+ 3. Gemfile수정  
 
+plugins이후 코드는 넣었을 때 오류발생  
+일단, 아래 코드만 넣은 후 저장    
 ~~~
 source "https://rubygems.org"
 
 gem "github-pages", group: :jekyll_plugins
 ~~~  
 
-
-4. page ,post의 layout 변경  
+ 4. page ,post의 layout 변경  
 ~~~
 layout: post
 ~~~  
 
-
-5. 정상적인 설치 완료 시
+ 5. 정상적인 설치 완료 시
 ~~~
 bundle update
 bundle exec jekyll serve
 ~~~  
 
-6. 에러가 없을 시 
+ 6. 에러가 없을 시 
 ~~~
 git add .
 git commit -m [""]
 git push
 ~~~  
+
 
 
 ⚠️오류 발생시  
@@ -133,7 +132,7 @@ bundle exec jekyll serve
 ~~~
 Bundler could not find compatible versions for gem "jekyll"
 '''해결방법
-1.Gemfile, Gemfile.lock삭제
+Gemfile, Gemfile.lock삭제  
 Gemfile에 다음을 입력 후 저장
 source 'https://rubygems.org'
 gem 'github-pages'
