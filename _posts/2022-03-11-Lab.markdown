@@ -126,8 +126,10 @@ git push
 
 ⚠️오류 발생시  
 * 테마 적용 후에 bundle 실행 시  
-bundle exec jekyll serve
-1. 
+bundle exec jekyll serve  
+
+1.  
+
 ~~~
 Bundler could not find compatible versions for gem "jekyll"
 '''해결방법
@@ -138,7 +140,8 @@ gem 'github-pages'
 '''
 ~~~  
 
-2. 
+2.  
+
 ~~~
 Build Warning: Layout 'post' requested in _posts/[파일] does not exist.
 '''해결방법
