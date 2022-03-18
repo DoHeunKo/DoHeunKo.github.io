@@ -24,7 +24,8 @@ categories: jekyll update
 ---
 
 
-> **시간복잡도의 표기법**
+> **시간복잡도의 표기법**  
+
 * 빅 오(Big-Oh, O(n)) 표기법은 Worst case  
 $$O(g(n))= \{f(n) | ∋_c>0, n_0>0,  \forall\ n\geq n_0 , f(n)\leq\ cg(n)  \}$$
 
