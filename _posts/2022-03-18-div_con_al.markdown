@@ -4,6 +4,7 @@ title:  "Divide and Conquer"
 date:   2022-03-18 09:41:41 +0900
 categories: jekyll update
 use_math: true
+comments : true
 ---
 
 # 분할정복  
