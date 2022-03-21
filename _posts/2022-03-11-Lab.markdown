@@ -3,6 +3,7 @@ layout: archive
 title:  "Computer algorithm"
 date:   2022-03-11 08:41:41 +0900
 categories: jekyll update
+use_math: true
 ---
 
 
