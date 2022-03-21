@@ -4,6 +4,8 @@ title:  "Computer algorithm"
 date:   2022-03-11 08:41:41 +0900
 categories: jekyll update
 use_math: true
+
+comments : true
 ---
 
 
@@ -147,3 +149,9 @@ post 파일의
 layout : archive로 바꿨을 때 오류 해결
 '''
 ~~~  
+
+{% if page.comments%}
+
+{%include disqus_comments.html %}
+
+{% endif %}  

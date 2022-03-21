@@ -3,6 +3,7 @@ layout: archive
 title:  "Welcome to Jekyll!"
 date:   2022-03-11 08:41:41 +0900
 categories: jekyll update
+comments : true
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
@@ -63,3 +64,9 @@ efg
 
 link: [이건 링크입니다](https://naver.com)  
 image: ![](https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png)
+
+{% if page.comments%}
+
+{%include disqus_comments.html %}
+
+{% endif %}  

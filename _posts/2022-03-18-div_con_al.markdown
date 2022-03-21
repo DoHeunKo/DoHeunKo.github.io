@@ -131,3 +131,9 @@ $ \Rightarrow	T(n) \leq n+nlog_2 n \in O(nlog_2 n) $
 4. 부분 리스트들이 더 이상 분할이 불가능할 때까지 반복한다.
 리스트의 크기가 0이나 1이 될 때까지 반복한다.
 ![](https://dudri63.github.io/image/algo6-2.png)
+
+{% if page.comments%}
+
+{%include disqus_comments.html %}
+	
+{% endif %}  
