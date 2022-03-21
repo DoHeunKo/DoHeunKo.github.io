@@ -28,13 +28,13 @@ use_math: true
 > **시간복잡도의 표기법**  
 
 * 빅 오(Big-Oh, O(n)) 표기법은 Worst case  
-$$O(g(n))= \{f(n) | ∋_c>0, n_0>0,  \forall\ n\geq n_0 , f(n)\leq\ cg(n)  \}$$
+$O(g(n))= \{f(n) | ∋_c>0, n_0>0,  \forall\ n\geq n_0 , f(n)\leq\ cg(n)  \}$
 
 * 빅 오메가(Big-Omega, Ω(n)) 표기법은 Best case  
-$$ Ω(g(n))=\{f(n) | ∋_c>0, n_0>0, \forall\ n\geq n_0 , f(n)\geq\ cg(n) \} $$
+$ Ω(g(n))=\{f(n) | ∋_c>0, n_0>0, \forall\ n\geq n_0 , f(n)\geq\ cg(n) \} $
 
 * 빅 세타(Big-theta, θ(n)) 표기법은 Average case  
-$$ θ(g(n))= \{f(n)| ∋_{c1,c2} >0, n_0>0, \forall\ n\geq n_0, c_1g(n)\leq f(n) \leq c_2g(n) \}$$
+$ θ(g(n))= \{f(n)| ∋_{c1,c2} >0, n_0>0, \forall\ n\geq n_0, c_1g(n)\leq f(n) \leq c_2g(n) \}$
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FHUzQN%2FbtqysMgY8dl%2FREOiLThX3PM65wWCKGZo8k%2Fimg.jpg)
 
 ---
