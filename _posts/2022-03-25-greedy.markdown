@@ -1,4 +1,3 @@
-
 ---
 layout: archive  
 title:  "Greedy algorithm"  
@@ -25,6 +24,7 @@ comments : true
 ## 요약
 > 탐욕 -> 눈앞의 상황만으로 결정-> 근시안적으로 선택  
 
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FsjDXK%2Fbtq91NZOlOt%2FdNKginLsmuLunBLgcCaeLk%2Fimg.png)
 ## 개념
 > 탐욕알고리즘의 개념 : 각 단계에서 최선의 선택을 하고 이들의 집합이 해가 됨  
 > 장점 : 빠른 계산  
@@ -41,12 +41,12 @@ comments : true
 > 3. 새 해 모음이 실현 가능한지 확인 
 > 4. 새 해 모음이 최종해라면 종료  
 
+# 동전 거스름돈 문제  
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdeAQUb%2Fbtq98u5kDiE%2FwujcPRSmaYGZbfB7Yq2fnk%2Fimg.png) 
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Flx8y2%2Fbtq9ZqXR7Yx%2FIhKKN5q0KsLPOh76EakRSk%2Fimg.png)
 
 
 
 
-{% if page.comments%}
-
-{%include disqus_comments.html %}
-	
-{% endif %}  
