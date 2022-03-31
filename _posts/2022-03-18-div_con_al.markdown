@@ -6,6 +6,7 @@ categories: jekyll update
 use_math: true
 comments : true
 ---
+# 컴퓨터 알고리즘(3주차)
 
 # 분할정복  
 

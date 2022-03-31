@@ -8,7 +8,7 @@ use_math: true
 comments : true
 ---
 
-
+# 컴퓨터 알고리즘(2주차)
 
 
 
