@@ -14,8 +14,7 @@ comments : true
 > * Greedy algorithm
 > * 동전 거스름돈 문제
 > * 부분 배낭 문제
-> * Spanning Tree
-> * Minimum spanning Tree(MST)
+> * Minimum Spanning Tree(MST)
 > * Kruskal algorithm
 > * Prim algorithm
 
@@ -26,9 +25,9 @@ comments : true
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FsjDXK%2Fbtq91NZOlOt%2FdNKginLsmuLunBLgcCaeLk%2Fimg.png)
 ## 개념
-> 탐욕알고리즘의 개념 : 각 단계에서 최선의 선택을 하고 이들의 집합이 해가 됨  
-> 장점 : 빠른 계산  
-> 단점 : 최적해를 보장하지 않음  
+> *  탐욕알고리즘의 개념 : 각 단계에서 최선의 선택을 하고 이들의 집합이 해가 됨  
+> * 장점 : 빠른 계산  
+> * 단점 : 최적해를 보장하지 않음  
 
 ## 기준
 > 1. 선택이 실현 가능해야 한다. 즉, 선택이 문제의 제약사항들을 만족시켜야 한다.
@@ -46,6 +45,82 @@ comments : true
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdeAQUb%2Fbtq98u5kDiE%2FwujcPRSmaYGZbfB7Yq2fnk%2Fimg.png) 
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Flx8y2%2Fbtq9ZqXR7Yx%2FIhKKN5q0KsLPOh76EakRSk%2Fimg.png)
+
+> 풀이는 간단하다. 거스름돈의 잔액을 보고 가장 큰 금액의 동전을 계속해서 고르면 된다. 즉 매 순간 최적의 해를 택하면 되는 것이다.  
+
+# 부분 배낭 문제  
+
+## 배낭문제  
+> * n개의 물건이 각 무게와 가치를 가지고 있을 때, 한정된 용량의 배낭에 최대의 가치를 갖도록 넣는 방법에 대한 문제이다.  
+> * 부분 배낭 문제는 물건을 부분적으로 담는 것이 허용된다.  
+
+## 알고리즘  
+> * 물건을 부분적으로 담을 수 있으므로, 단위 무게당 가치가 제일 높은 것부터 배낭에 넣는다.  
+> * 입력으로 각 물건의 무게와 가치, 배낭의 용량을 받는다.  
+> * 출력은 배낭에 담은 물건 리스트와 배낭에 담은 가치의 총합이다.  
+
+## 시간 복잡도
+> * 각 물건의 단위 무게당 가치를 계산할 때 O(n)시간이 걸린다.
+> * 정렬할 때 O(nlogn)시간이 걸린다.
+> * 시간복잡도는 O(nlogn) 
+
+# Minimum Spanning Tree(MST)
+## Spanning Tree란?  
+그래프 내의 모든 정점을 포함하는 트리  
+* n개의 정점을 가지고 n-1개의 간선으로 연결  
+* 사이클을 포함해서는 안된다.  
+![](https://gmlwjd9405.github.io/images/algorithm-mst/spanning-tree.png)
+
+
+## MST란?  
+Spanning Tree 중에서 사용된 간선들의 가중치 합이 최소인 트리  
+* 단순히 가장 적은 간선을 사용한다고 해서 최소 비용이 얻어 지는 것은 아니다.  
+*  MST는 간선에 가중치를 고려하여 최소 비용의 Spanning Tree를 선택하는 것을 말한다.  
+
+## 특징 
+> 1. 간선의 가중치 합이 최소여야 함  
+> 2. n개의 정점을 가지고 n-1개의 간선으로 연결  
+> 3. 사이클을 포함해서는 안된다. 
+---  
+
+
+
+# 구현방법 
+
+## Kruskal(간선기준)
+
+### Kruskal MST 알고리즘  
+Greedy method를 이용하여 가중치를 간선에 할당한 그래프의 모든 정점을 최소 비용으로 연결하여 최적 해답을 구하는 것  
+> 1. 그래프의 간선들을 가중치의 오름차순으로 정렬  
+> 2. 정렬된 간선리스트에서 순서대로 사이클을 형성하지 않는 간선 선택  
+> 3. 해당 간선을 현재의 MST의 집합에 추가  
+
+
+![](https://gmlwjd9405.github.io/images/algorithm-mst/kruskal-example2.png)
+
+> * 사이클 형성 여부 확인 --> union-find 알고리즘
+> * 간선 e개를 퀵 정렬과 같은 효율적인 알고리즘으로 정렬한다면
+Kruskal 알고리즘의 시간 복잡도는 O(elog₂e) 이 된다.
+
+---  
+
+## Prim(정점기준)
+
+### Prim MST 알고리즘
+시작 정점에서부터 출발하여 신장트리 집합을 단계적으로 확장해나가는 방법  
+
+> 1. 시작 단계에서는 시작 정점만이 MST 집합에 포함
+> 2. 앞 단계에서 만들어진 MST 집합에 인접한 정점들 중에서 최소 간선으로 연결된 정점을 선택하여 트리를 확장
+> 3. 위의 과정을 트리가 (N-1)개의 간선을 가질 때까지 반복   
+
+![](https://gmlwjd9405.github.io/images/algorithm-mst/prim-example.png)
+
+> * 주 반복문이 정점의 수 n만큼 반복하고, 내부 반복문이 n번 반복
+Prim의 알고리즘의 시간 복잡도는 O(n^2) 이 된다.  
+
+
+
+
 
 
 
