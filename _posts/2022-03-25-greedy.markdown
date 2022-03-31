@@ -1,0 +1,52 @@
+
+---
+layout: archive  
+title:  "Greedy algorithm"  
+date:   2022-03-31 09:41:00 +0900  
+categories: jekyll update  
+use_math: true  
+comments : true  
+---  
+
+
+# 컴퓨터 알고리즘 (4주차)
+
+# Goal 
+> * Greedy algorithm
+> * 동전 거스름돈 문제
+> * 부분 배낭 문제
+> * Spanning Tree
+> * Minimum spanning Tree(MST)
+> * Kruskal algorithm
+> * Prim algorithm
+
+# Greedy algorithm 
+
+## 요약
+> 탐욕 -> 눈앞의 상황만으로 결정-> 근시안적으로 선택  
+
+## 개념
+> 탐욕알고리즘의 개념 : 각 단계에서 최선의 선택을 하고 이들의 집합이 해가 됨  
+> 장점 : 빠른 계산  
+> 단점 : 최적해를 보장하지 않음  
+
+## 기준
+> 1. 선택이 실현 가능해야 한다. 즉, 선택이 문제의 제약사항들을 만족시켜야 한다.
+> 2. 모든 실현 가능한 선택들 중에서 선택하는 순간에 최적이라고 여겨지는 선택을 해야한다.
+> 3. 한 번 선택하면 나중에 되돌릴 수 없다.  
+
+## 설계 전략  
+> 1. 비어 있는 해 모음으로 시작
+> 2. 탐욕적인 기준에 따라 해 모음에 추가할 다음 해를 선택
+> 3. 새 해 모음이 실현 가능한지 확인 
+> 4. 새 해 모음이 최종해라면 종료  
+
+
+
+
+
+{% if page.comments%}
+
+{%include disqus_comments.html %}
+	
+{% endif %}  
