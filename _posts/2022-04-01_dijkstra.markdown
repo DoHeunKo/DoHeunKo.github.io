@@ -1,0 +1,28 @@
+---
+layout: archive  
+title:  "dijkstra algorithm"  
+date:   2022-04-01 09:41:00 +0900  
+categories: jekyll update  
+use_math: true  
+comments : true  
+---  
+
+# 컴퓨터 알고리즘(5주자)
+
+## dijkstra 알고리즘  
+
+## 작업 스케줄링
+
+## 허프만 압축
+코드구현  
+글, 에세이  입력으로 넣고 , 빈도수, 파일 적재 , 기반  
+
+허프만 결과값이 있을 떄, 전체 바이트 비트수 (실제)데이터 사이트와 다시 매핑 (000 001 010 100)
+원본사이즈와 /변환사이즈 비율 압축률 
+
+github collabo -.> 설명서 : readme.md 저장소 하나로(파트배분,branch,commit)   
+파일로딩, 빈도수 , 알고리즘, 별로 파트 분해  
+중간고사 전까지 
+
+## 
+

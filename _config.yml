@@ -15,15 +15,15 @@
 minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "#컴퓨터알고리즘"
+locale                   : "ko-KR"
+title                    : "#개발"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "DoHeunKo"
-description              : "An amazing website."
+subtitle                 : "2022.3~"
+name                     : "고도흔"
+description              : ""
 url                      : "https://DoHeunKo.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "doheunko/doheunko.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -41,7 +41,7 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : "dark"
   utterances:
-    theme                : # "github-light" (default), "github-dark"
+    theme                : "github-light"
     issue_term           : # "pathname" (default)
   giscus:
     repo_id              : # Shown during giscus setup at https://giscus.app
@@ -60,7 +60,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
 search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search_full_content      :  true
 search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -102,13 +102,13 @@ analytics:
 
 # Site Author
 author:
-  name             : "DoHeunKo"
+  name             : "고도흔"
   avatar           : "/assets/images/android.jpg"
   bio              : "Mechatronics Engineering"
   location         : "Incheon university"
   email            :
   links:
-    - label: "Email"
+    - label: "ehgms9332@naver.com"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
     - label: "Website"
@@ -122,7 +122,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      #url: "https://github.com/doheunko"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -141,7 +141,7 @@ footer:
       # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
-      # url:
+      #url: "https://github.com/doheunko"
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
@@ -288,3 +288,21 @@ defaults:
       comments: # true
       share: true
       related: true
+ # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: false
+
+  # _sidebar
+  - scope:
+      path: ""
+    values:
+      sidebar:
+        nav: "sidebar"

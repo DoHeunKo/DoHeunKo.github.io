@@ -1,8 +1,10 @@
 ---
-layout: archive
-title:  "Welcome to Jekyll!"
+layout: single
+title:  "start"
 date:   2022-03-11 08:41:41 +0900
-categories: jekyll update
+categories: 
+- Computer Science
+- Algorithm Concepts
 comments : true
 ---
 

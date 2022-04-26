@@ -1,12 +1,25 @@
 # main links
 main:
-  - title: "About"
-    url: /about/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "홈"
+    url: /
+  - title: "카테고리"
+    url: /categories/
+
+# Sidebar
+sidebar:
+  - title: "기본"
+    children:
+      - title: "Computer Science"
+        url: /categories/algorithm-concepts/
+        category: "Data Structur & Algorithm"
+        grandchildren:
+          - title: "- Algorithm & Data Structure"
+            url: /categories/computer-science/
+            category: "Algorithm Concepts"
+      # - title: "알고리즘 문제풀이(백준)"
+      #   url: /categories/problem-solving/
+      #   category: "Problem Solving"
+      #   grandchildren:
+      #     - title: "- Java"
+      #       url: /categories/problem-solving/Java/
+      #       category: "Java"

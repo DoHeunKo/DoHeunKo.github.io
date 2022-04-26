@@ -1,8 +1,10 @@
 ---
-layout: archive
+layout: single
 title:  "Divide and Conquer"
 date:   2022-03-18 09:41:41 +0900
-categories: jekyll update
+categories: 
+- Computer Science
+- Algorithm Concepts
 use_math: true
 comments : true
 ---

@@ -1,10 +1,13 @@
 ---
-layout: archive  
-title:  "Greedy algorithm"  
+layout: single 
+title:  "Greedy algorithm" 
 date:   2022-03-31 09:41:00 +0900  
-categories: jekyll update  
+categories: Data Structur & Algorithm
 use_math: true  
 comments : true  
+categories: 
+- Computer Science
+- Algorithm Concepts
 ---  
 
 

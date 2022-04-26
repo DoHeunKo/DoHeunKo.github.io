@@ -16,11 +16,22 @@
         {% if nav.children != null %}
         <ul>
           {% for child in nav.children %}
-            <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}</a></li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-</nav>
+            <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}
+            </a></li>
+
+            {% if child.grandchildren != null %}
+            <ul class="nav__granditems">
+              {% for grandchild in child.grandchildren %}
+                <li><a href="{{ grandchild.url | relative_url }}"{% if grandchild.url == page.url %} class="active"{% endif %}>{{ grandchild.title }}
+                <span class="num__badges num__badges_grand">{{ site.categories.[grandchild.category] | size }}</span></a></li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+  
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
