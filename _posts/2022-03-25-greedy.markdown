@@ -2,9 +2,9 @@
 layout: single 
 title:  "Greedy algorithm" 
 date:   2022-03-31 09:41:00 +0900  
-categories: Data Structur & Algorithm
 use_math: true  
 comments : true  
+use_math: true
 categories: 
 - Computer Science
 - Algorithm Concepts
